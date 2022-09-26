@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>att and removeattr Method</title>
+    <style type="text/css">
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container{
+            width: 800px;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .text-primary{
+            color: blue;
+        }
+
+        .text-light{
+            color: white;
+        }
+
+        .bg-info{
+            background-color: skyblue;
+        }
+
+        .text-center{
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <img src="img/ph1.png" width="100px" />
+            
+            <h1 id="1" class="">Hello Myanmar</h1>
+            <h1 id="2" class="">Hello Thailand</h1>
+            <h1 id="3" class="">Hello Indonesia</h1>
+            <h1 id="4 " class="">Hello Srilanka</h1>
+        </div>
+
+        <button type="button" id="txtpri">Text-primary</button>
+        <button type="button" id="bginfo">bg-info</button>
+        <button type="button" id="txtbg">bg-info</button>
+
+    </div>
+
+
+    <script src="libs/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // console.log('hi');
+
+            $('#txtpri').click(function(){
+                $('h1').attr("class","text-primary");
+            });
+
+
+            $('#bginfo').click(function(){
+                $('h1').attr("class","bg-info");
+            });
+
+
+        });
+
+    </script>
+</body>
+
+</html>
+
+<!-- qqqqhttps://www.mediafire.com/view/pv637db0o2pikbt/logo2.png/file -->
